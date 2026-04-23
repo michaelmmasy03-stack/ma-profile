@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Mmasy | Personal Profile</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid #4facfe;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #333;
+        }
+
+        h3 {
+            color: #4facfe;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .info {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .info p {
+            margin: 6px 0;
+        }
+
+        a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #4facfe;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #007bff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <!-- YOUR IMAGE (Make sure profile.jpg is in same folder) -->
+        <img src="profile.jpg" alt="Michael Mmasy" class="profile-img">
+
+        <h1>Michael Mmasy</h1>
+        <h3>Computer Engineering Student</h3>
+        <p>Welcome to my personal digital profile.</p>
+
+        <div class="info">
+            <p><strong>Email:</strong> 
+                <a href="mailto:michaelmmasy03@gmail.com">michaelmmasy03@gmail.com</a>
+            </p>
+
+            <p><strong>Phone:</strong> +255 682 965 404</p>
+            <p><strong>Location:</strong> Dar es Salaam, Tanzania</p>
+            <p><strong>Skills:</strong> Programming, Networking, Web Development</p>
+        </div>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/255682965404" class="btn">Contact Me on WhatsApp</a>
+    </div>
+
+</body>
+</html>
